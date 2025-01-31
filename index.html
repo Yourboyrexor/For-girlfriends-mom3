@@ -13,9 +13,11 @@
             overflow: hidden;
             height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             background: #ffcc99;
+            text-align: center;
         }
 
         .parallax {
@@ -27,134 +29,23 @@
             background: url('https://source.unsplash.com/1600x900/?nature,sky') no-repeat center center fixed;
             background-size: cover;
             z-index: -1;
-            animation: moveBackground 15s linear infinite;
         }
 
         header {
-            font-size: 1.8em;
+            font-size: 1.5em; /* Smaller font */
             color: #fff;
             font-weight: 600;
-            margin-bottom: 8px;
-            animation: fadeIn 2s ease-out;
+            margin-bottom: 5px;
         }
 
         main {
-            background: rgba(255, 255, 255, 0.85);
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            width: 85%;
-            max-width: 450px;
-            font-size: 0.9em; /* Reduced font size */
-            line-height: 1.4;
-            max-height: 300px; /* Fixed max-height */
-            overflow-y: auto; /* Scrollable content */
-            animation: fadeInUp 2s ease-out;
-        }
-
-        p {
-            color: #555;
-            margin: 6px 0; /* Reduced margin */
-        }
-
-        .highlight {
-            color: #ff6347;
-            font-weight: bold;
-        }
-
-        footer {
-            margin-top: 15px;
-            font-size: 0.85em;
-            color: #fff;
-            background-color: #ff6347;
+            background: rgba(255, 255, 255, 0.9);
             padding: 8px;
-            border-radius: 10px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-            animation: fadeIn 3s ease-out;
-        }
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-
-        footer a:hover {
-            color: #ffcc99;
-        }
-
-        @media screen and (max-width: 768px) {
-            header {
-                font-size: 1.6em;
-            }
-
-            main {
-                padding: 10px;
-                font-size: 0.85em;
-                width: 85%;
-                max-height: 250px; /* Shortened max-height */
-            }
-
-            footer {
-                font-size: 0.8em;
-                padding: 6px;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            header {
-                font-size: 1.4em;
-            }
-
-            main {
-                padding: 8px;
-                font-size: 0.8em;
-                max-height: 200px; /* Even smaller max-height */
-            }
-
-            footer {
-                font-size: 0.75em;
-                padding: 5px;
-            }
-        }
-
-        /* Animación para desvanecerse, deslizar hacia arriba y fondo parallax */
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        @keyframes fadeInUp {
-            0% { transform: translateY(30px); opacity: 0; }
-            100% { transform: translateY(0); opacity: 1; }
-        }
-
-        @keyframes moveBackground {
-            0% { background-position: 0 0; }
-            100% { background-position: 100% 0; }
-        }
-    </style>
-</head>
-<body>
-
-    <div class="parallax"></div>
-
-    <header>
-        Un Mensaje Especial para Ti
-    </header>
-
-    <main>
-        <p>Querido <span class="highlight">Yuri</span>,</p>
-        <p>Aunque aún no hemos tenido la oportunidad de conocernos en persona, quería aprovechar este momento para compartir lo mucho que admiro tu <span class="highlight">bondad</span> y la forma en que traes alegría a quienes te rodean.</p>
-        <p>La manera en que enfrentas la vida y esparces positividad, incluso a distancia, es realmente inspiradora. Me siento afortunado de conocer a alguien como tú, y espero con ansias el día en que podamos conectar en persona.</p>
-        <p>Hasta entonces, solo quería enviarte un poco de aprecio y recordarte cuánto te valoro.</p>
-        <p>Con admiración, <br> Kaiden</p>
-    </main>
-
-    <footer>
-        &copy; 2025 Un Mensaje Especial para Ti | <a href="mailto:kaidenhively2009@gmail.com">Contáctame</a>
-    </footer>
-
-</body>
-</html>
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 350px; /* Smaller width */
+            font-size: 0.8em; /* Smaller text */
+            line-height: 1.2; /* Less space between lines */
+            max-height: 200px; /* Forces it to be small */
+            overflow-y: auto; /* Scrollable
